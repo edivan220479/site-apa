@@ -1,0 +1,117 @@
+/* Variáveis com as cores extraídas da logo */
+:root {
+  --apa-vermelho: #c8102e;
+  --apa-verde: #008837;
+  --apa-azul: #1d2088;
+  --apa-fundo-claro: #f8f9fa;
+  --apa-texto: #333333;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--apa-texto);
+}
+
+/* Navbar Personalizada */
+.navbar {
+  border-bottom: 4px solid var(--apa-verde);
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #444 !important;
+}
+
+.nav-link:hover {
+  color: var(--apa-vermelho) !important;
+}
+
+/* Botão Principal */
+.btn-apa-primary {
+  background-color: var(--apa-vermelho);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-apa-primary:hover {
+  background-color: #a00c23;
+  color: #fff;
+}
+
+.btn-apa-secondary {
+  background-color: var(--apa-azul);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-apa-secondary:hover {
+  background-color: #141663;
+  color: #fff;
+}
+/* 1. Controla a largura total do carrossel e o centraliza na página */
+/* Container principal do carrossel (caixa centralizada) */
+/* Container adaptado para imagens verticais/flyers */
+.carousel {
+    max-width: 480px; /* Reduz a largura para caber a imagem vertical */
+    margin: 40px auto; /* Centraliza na página */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff; /* Fundo branco em vez de preto */
+}
+
+/* Slide com altura adequada para ler o cartaz inteiro */
+.carousel-item {
+    height: 600px; /* Altura ideal para flyers verticais */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagem ocupa 100% da caixa sem cortar nem esticar */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mostra o cartaz 100% completo */
+}
+
+/* Oculta ou ajusta a legenda do Bootstrap para não cobrir o texto do cartaz */
+.carousel-caption {
+    display: none; /* Como o cartaz já tem o texto impresso, é melhor esconder a legenda por cima */
+}
+
+/* Ajustes para ecrãs de telemóvel */
+@media (max-width: 576px) {
+    .carousel {
+        max-width: 90%;
+    }
+    .carousel-item {
+        height: 480px;
+    }
+}
+/* Seções */
+.section-title {
+  color: var(--apa-azul);
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--apa-verde);
+  margin-top: 8px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--apa-azul);
+  color: white;
+  border-top: 5px solid var(--apa-vermelho);
+}

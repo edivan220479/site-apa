@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação APA - Inclusão e Amor</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. CABEÇALHO / NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/logo.png" alt="Logo APA" height="65" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <a href="#doe" class="btn btn-apa-primary ms-lg-3 px-4 py-2">Apoie/Doe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. CARROSSEL (3 IMAGENS) -->
+    <section id="inicio">
+        <div id="carrosselAPA" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores (Bolinhas) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosselAPA" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carrosselAPA" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carrosselAPA" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="assets/img/carrossel-1.jpg" class="d-block w-100" alt="Imagem 1 - União e Apoio">
+                    <div class="carousel-caption">
+                        <h3>Unidos pelo Amor e Solidariedade</h3>
+                        <p>Trabalhando juntos para transformar vidas e fortalecer nossa comunidade.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="assets/img/carrossel-2.jpg" class="d-block w-100" alt="Imagem 2 - Ações Comunitárias">
+                    <div class="carousel-caption">
+                        <h3>Nossos Projetos Sociais</h3>
+                        <p>Conheça nossas ações e veja como você pode fazer a diferença.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="assets/img/carrossel-3.jpg" class="d-block w-100" alt="Imagem 3 - Voluntariado">
+                    <div class="carousel-caption">
+                        <h3>Seja um Voluntário</h3>
+                        <p>Junte-se a nós e compartilhe o seu tempo e carinho com quem precisa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles (Setas) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselAPA" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselAPA" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- 3. SEÇÃO SOBRE -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="section-title">Sobre a Associação APA</h2>
+                    <p class="lead">A APA é uma organização dedicada ao bem-estar, apoio e acolhimento comunitário.</p>
+                    <p>Nossa missão é promover o respeito, a inclusão social e o desenvolvimento humano através de programas de assistência, educação e saúde para famílias e indivíduos em situação de vulnerabilidade.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="assets/img/logo.png" alt="Logo APA" class="img-fluid p-4" style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SEÇÃO PROJETOS -->
+    <section id="projetos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Nossos Projetos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Acolhimento Social</h5>
+                            <p class="card-text">Suporte direto para famílias através de doações, refeições e acompanhamento contínuo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Capacitação & Educação</h5>
+                            <p class="card-text">Oficinas e cursos para qualificação profissional e inclusão no mercado de trabalho.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Saúde e Bem-Estar</h5>
+                            <p class="card-text">Atendimento básico, orientações preventivas e apoio multidisciplinar aos assistidos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. RODAPÉ -->
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2026 Associação APA. Todos os direitos reservados.</p>
+            <small>Juntos construindo um futuro com mais amor e união.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Necessário para a navegação e carrossel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Customizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
